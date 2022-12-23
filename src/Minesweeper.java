@@ -2,12 +2,13 @@ import java.util.*;
 import java.lang.Math;
 
 /**
-* Minesweeper
-* Original Date: 01/29/19
-* Modified Date: 12/23/22
-* A personalized/modified game of the classic Minesweeper.
-* @author Johnson Le
-*/
+ * Minesweeper
+ * Original Date: 01/29/19
+ * Modified Date: 12/23/22
+ * A personalized/modified game of the classic Minesweeper.
+ * 
+ * @author Johnson Le
+ */
 
 class Minesweeper {
         public static void main(String[] args) {
@@ -47,7 +48,8 @@ class Minesweeper {
                                 } else {
                                         System.out.println("You hit a mine");
                                         System.out.println("You've lost");
-                                        System.out.println("These are where all the mines were:"); // Lists all the mines
+                                        System.out.println("These are where all the mines were:"); // Lists all the
+                                                                                                   // mines
 
                                         gridDisplay = finalGrid(grid);
                                         PrintDisplay(gridDisplay); // Solution is determined and outputed for the user
@@ -176,8 +178,7 @@ class Minesweeper {
          * Pre: Array must be a 2D array: 8 by 8
          * Post: Array is outputed
          */
-        public static void PrintDisplay(String pd[][])
-        {
+        public static void PrintDisplay(String pd[][]) {
                 System.out.println(pd[0][0] + " " + pd[0][1] + " " + pd[0][2] + " " + pd[0][3] + " " + pd[0][4] + " "
                                 + pd[0][5] + " " + pd[0][6] + " " + pd[0][7]);
                 System.out.println(pd[1][0] + " " + pd[1][1] + " " + pd[1][2] + " " + pd[1][3] + " " + pd[1][4] + " "
@@ -203,15 +204,20 @@ class Minesweeper {
          * Post: Cursor is on the next line
          */
         public static void instructions() {
-                System.out.println("Welcome to Minesweeper!");   
+                System.out.println("Welcome to Minesweeper!");
                 System.out.println("In this game, there is a 8x8 grid, which contains hidden EXPLOSIVE MINES!");
-                System.out.println("You are a member of a bomb squad (*) and you are tasked with clearling the field of mines");
-                System.out.println("You must select one of the cells by selecting the number row and column you want to inspect");
-                System.out.println("Select a cell by entering a ROW and Column number of the cell. For the selected cell, you will see a numeric number pop-up, representing a MINE");
-                System.out.println("The pop-up number represents the number of bombs adjacent to your cell - this includes cells diagonally adjacent to it");
-                                                                                                                                                           
+                System.out.println(
+                                "You are a member of a bomb squad (*) and you are tasked with clearling the field of mines");
+                System.out.println(
+                                "You must select one of the cells by selecting the number row and column you want to inspect");
+                System.out.println(
+                                "Select a cell by entering a ROW and Column number of the cell. For the selected cell, you will see a numeric number pop-up, representing a MINE");
+                System.out.println(
+                                "The pop-up number represents the number of bombs adjacent to your cell - this includes cells diagonally adjacent to it");
+
                 System.out.println(""); // Instructions for the game
-                System.out.println("To win click on all cells except for the mines, untill there are no more cells to open");
+                System.out.println(
+                                "To win click on all cells except for the mines, untill there are no more cells to open");
                 System.out.println("If your cell pops-up a mine (*), you lose the game");
                 System.out.println("");
                 System.out.println("This game was originally made by Microsoft");
