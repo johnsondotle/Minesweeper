@@ -5,7 +5,7 @@ import java.lang.Math;
 * Minesweeper
 * Original Date: 01/29/19
 * Modified Date: 12/23/22
-* A personalized/modified game of the classic Minesweeper
+* A personalized/modified game of the classic Minesweeper.
 * @author Johnson Le
 */
 
